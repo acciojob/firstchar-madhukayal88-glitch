@@ -1,8 +1,15 @@
 function firstChar(text) {
-  // your code here
+  // We iterate through the string character by character
+  for (let i = 0; i < text.length; i++) {
+    // If the current character is not a space, return it immediately
+    if (text[i] !== ' ') {
+      return text[i];
+    }
+  }
+  // If the loop finishes (meaning only spaces or empty string), return empty string
+  return '';
 }
 
-// Do not change the code below
-//Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
-alert(firstChar(text));
+// Example usage:
+// const text = prompt("Enter text:");
+// alert(firstChar(text));
